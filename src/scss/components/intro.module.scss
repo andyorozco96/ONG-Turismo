@@ -1,5 +1,6 @@
 @import "../abstracts/reset.scss";
 @import "../abstracts/variables.scss";
+@import "../abstracts/mixins.scss";
 
 .main {
   width: 100%;
@@ -23,16 +24,18 @@
     width: 30px;
     margin-right: 5em;
     z-index: 1;
-    background-color: $primary-color;
+    background-color: $secondary-color;
     border-radius: 25px;
     padding: 0.3em 0em;
 
     .socialBtn {
       a {
         i {
+          border: none;
           font-size: 1.2rem;
+          font-weight: lighter;
           color: $text-color-white;
-          text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.664);
+          //text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.664);
         }
       }
 
@@ -63,10 +66,24 @@
     text-align: center;
     color: white;
 
+    .logoCont {
+      max-height: 100px;
+      width: 100px;
+      //background-color: red;
+      img {
+        width: 100%;
+      }
+    }
+
     h1 {
+      font-family: $font-titles;
+      font-weight: 400;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      font-size: 3rem;
       .primaryText {
+        font-family: $font-titles;
         color: $primary-color;
+        font-weight: 700;
       }
     }
 
@@ -74,6 +91,14 @@
       width: 40%;
       font-size: 0.8rem;
       margin: 1rem 0;
+    }
+
+    .btnContainer {
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      .btnPrimary {
+        @include btn-primary;
+      }
     }
   }
 }

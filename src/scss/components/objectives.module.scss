@@ -1,0 +1,99 @@
+@import "../abstracts/reset.scss";
+@import "../abstracts/variables.scss";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: auto;
+  gap: 3rem;
+  //background-color: antiquewhite;
+  align-items: center;
+  justify-content: center;
+
+  .cardsContainer {
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    .card {
+      position: relative;
+      $card-size: calc(100vw * 0.23);
+      height: 90%;
+      width: $card-size;
+      background-size: cover;
+      background-position: center;
+      transition: all 0.7s;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-5%);
+      }
+
+      .cardInfo {
+        position: absolute;
+        bottom: 0;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-left: 1rem;
+        padding-bottom: 1.5rem;
+        color: $text-color-white;
+
+        i {
+          font-size: 2.5rem;
+        }
+        span {
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+      }
+
+      .cardLayout {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.199);
+        transition: all 1s;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+
+  .textContainer {
+    display: flex;
+    //align-items: center;
+    justify-content: center;
+    //background-color: aquamarine;
+    gap: 3rem;
+
+    p {
+      width: 30%;
+      font-size: 0.8rem;
+      text-align: justify;
+      color: $text-color-grey;
+
+      .author {
+        text-align: right;
+        display: block;
+        margin-top: 1em;
+        font-weight: 600;
+
+        span {
+          display: block;
+          font-weight: 300;
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}

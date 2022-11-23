@@ -12,10 +12,17 @@ import style from "../scss/components/carousel.module.scss";
 
 function Carousel() {
   return (
-    <div className={style.container}>
+    <div id="carousel" className={style.container}>
+      <div className={style.textContainer}>
+        <h2>¡Descrube nuevos destinos en Argentina!</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+          aperiam corporis voluptatem harum, id cupiditate sunt mollitia hic
+          similique ut natus in minus illum fugit libero ipsum velit vel rerum!
+        </p>
+      </div>
       <div className={style.swiperContainer}>
         <Swiper
-          id="carousel"
           modules={[Pagination, Autoplay, Navigation]}
           autoplay={{
             delay: 3000,

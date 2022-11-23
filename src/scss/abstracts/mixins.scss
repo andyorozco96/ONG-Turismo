@@ -1,0 +1,30 @@
+@import "./variables.scss";
+
+@mixin btn-primary {
+  font-family: $font;
+  text-decoration: none;
+  color: $text-color-white;
+  border-radius: 8px;
+  transition: 0.2s linear;
+  display: inline;
+  background: linear-gradient(
+      345deg,
+      $primary-color 10%,
+      $primary-color 33%,
+      $secondary-color-dark 66%,
+      $primary-color-dark 100%
+    )
+    99% 50% / 400% 400%;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: 2px solid transparent;
+
+  &:hover {
+    background-position: 1% 50%;
+    //border: 2px solid $primary-color;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease 0s !important;
+
+    // transform: scale(1.1);
+  }
+}
