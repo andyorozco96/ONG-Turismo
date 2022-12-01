@@ -15,7 +15,7 @@ function Objectives() {
       objective2: false,
       objective3: false,
       objective4: false,
-      [e.target.id]: true,
+      [e.target.id]: !objective[e.target.id],
     });
   }
 
@@ -44,22 +44,16 @@ function Objectives() {
             backgroundImage:
               "url(https://images.pexels.com/photos/590798/pexels-photo-590798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
           }}
-          id="objective1"
-          onMouseOver={(e) => handleClick(e)}
         >
           <div
             className={style.cardInfo}
             id="objective1"
-            onMouseOver={(e) => handleClick(e)}
+            onClick={(e) => handleClick(e)}
           >
             <i class="uil uil-home"></i>
             <span>Objective 1</span>
           </div>
-          <div
-            className={style.cardLayout}
-            id="objective1"
-            onMouseOver={(e) => handleClick(e)}
-          ></div>
+          <div className={style.cardLayout}></div>
         </div>
 
         <div
@@ -68,22 +62,16 @@ function Objectives() {
             backgroundImage:
               "url(https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
           }}
-          id="objective2"
-          onMouseOver={(e) => handleClick(e)}
         >
           <div
             className={style.cardInfo}
             id="objective2"
-            onMouseOver={(e) => handleClick(e)}
+            onClick={(e) => handleClick(e)}
           >
             <i class="uil uil-comment-heart"></i>
             <span>Objective 2</span>
           </div>
-          <div
-            className={style.cardLayout}
-            id="objective2"
-            onMouseOver={(e) => handleClick(e)}
-          ></div>
+          <div className={style.cardLayout}></div>
         </div>
 
         <div
@@ -92,22 +80,16 @@ function Objectives() {
             backgroundImage:
               "url(https://images.pexels.com/photos/5064872/pexels-photo-5064872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
           }}
-          id="objective3"
-          onMouseOver={(e) => handleClick(e)}
         >
           <div
             className={style.cardInfo}
             id="objective3"
-            onMouseOver={(e) => handleClick(e)}
+            onClick={(e) => handleClick(e)}
           >
             <i class="uil uil-share-alt"></i>
             <span>Objective 3</span>
           </div>
-          <div
-            className={style.cardLayout}
-            id="objective3"
-            onMouseOver={(e) => handleClick(e)}
-          ></div>
+          <div className={style.cardLayout}></div>
         </div>
 
         <div
@@ -116,22 +98,16 @@ function Objectives() {
             backgroundImage:
               "url(https://images.pexels.com/photos/24698/pexels-photo-24698.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)",
           }}
-          id="objective4"
-          onMouseOver={(e) => handleClick(e)}
         >
           <div
             className={style.cardInfo}
             id="objective4"
-            onMouseOver={(e) => handleClick(e)}
+            onClick={(e) => handleClick(e)}
           >
             <i class="uil uil-rocket"></i>
             <span>Objective 4</span>
           </div>
-          <div
-            className={style.cardLayout}
-            id="objective4"
-            onMouseOver={(e) => handleClick(e)}
-          ></div>
+          <div className={style.cardLayout}></div>
         </div>
       </div>
       <div className={style.textSection}>
