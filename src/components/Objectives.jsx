@@ -50,8 +50,14 @@ function Objectives() {
             id="objective1"
             onClick={(e) => handleClick(e)}
           >
-            <i class="uil uil-home"></i>
-            <span>Objective 1</span>
+            <i
+              id="objective1"
+              onClick={(e) => handleClick(e)}
+              class="uil uil-home"
+            ></i>
+            <span id="objective1" onClick={(e) => handleClick(e)}>
+              Objective 1
+            </span>
           </div>
           <div className={style.cardLayout}></div>
         </div>
@@ -68,8 +74,14 @@ function Objectives() {
             id="objective2"
             onClick={(e) => handleClick(e)}
           >
-            <i class="uil uil-comment-heart"></i>
-            <span>Objective 2</span>
+            <i
+              id="objective2"
+              onClick={(e) => handleClick(e)}
+              class="uil uil-comment-heart"
+            ></i>
+            <span id="objective2" onClick={(e) => handleClick(e)}>
+              Objective 2
+            </span>
           </div>
           <div className={style.cardLayout}></div>
         </div>
@@ -86,8 +98,14 @@ function Objectives() {
             id="objective3"
             onClick={(e) => handleClick(e)}
           >
-            <i class="uil uil-share-alt"></i>
-            <span>Objective 3</span>
+            <i
+              id="objective3"
+              onClick={(e) => handleClick(e)}
+              class="uil uil-share-alt"
+            ></i>
+            <span id="objective3" onClick={(e) => handleClick(e)}>
+              Objective 3
+            </span>
           </div>
           <div className={style.cardLayout}></div>
         </div>
@@ -104,8 +122,14 @@ function Objectives() {
             id="objective4"
             onClick={(e) => handleClick(e)}
           >
-            <i class="uil uil-rocket"></i>
-            <span>Objective 4</span>
+            <i
+              id="objective4"
+              onClick={(e) => handleClick(e)}
+              class="uil uil-rocket"
+            ></i>
+            <span id="objective4" onClick={(e) => handleClick(e)}>
+              Objective 4
+            </span>
           </div>
           <div className={style.cardLayout}></div>
         </div>
