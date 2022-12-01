@@ -1,12 +1,11 @@
 import React from "react";
-import videoBg from "../assets/videoInicio.mp4";
+import videoBg from "../assets/videoInicio2.mp4";
 import logo from "../assets/logo.png";
 import style from "../scss/components/intro.module.scss";
 
 function Intro() {
   return (
     <div className={style.main}>
-      <div className={style.filter}></div>
       <div className={style.socialContainer}>
         <div className={style.socialBtn}>
           <a href="#carousel">
@@ -24,13 +23,14 @@ function Intro() {
           </a>
         </div>
       </div>
+      <div className={style.filter}></div>
       <video src={videoBg} autoPlay muted loop />
       <div className={style.content}>
         <div className={style.logoCont}>
           <img src={logo} alt="" />
         </div>
         <h1>
-          Welcome to <span className={style.primaryText}>nombre ONG</span>
+          Welcome to <b className={style.primaryText}>nombre ONG</b>
         </h1>
         <div className={style.headerInfo}>
           <p>
@@ -42,7 +42,7 @@ function Intro() {
         </div>
 
         <div className={style.btnContainer}>
-          <a className={style.btnPrimary} href="#">
+          <a className={style.btnPrimary} href="#contact">
             Conocer más
           </a>
         </div>

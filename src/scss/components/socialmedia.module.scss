@@ -1,0 +1,117 @@
+@import "../abstracts/reset.scss";
+@import "../abstracts/variables.scss";
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //justify-content: center;
+
+  background-color: $primary-color;
+  .socialTitle {
+    width: 90%;
+    font-size: 3rem;
+    font-family: $font-titles;
+    color: $text-color-white;
+    margin-top: 5rem;
+
+    // display: table;
+    // white-space: nowrap;
+    // &:before,
+    // &:after {
+    //   border-top: 4px solid $secondary-color;
+    //   content: "";
+    //   display: table-cell;
+    //   position: relative;
+    //   top: 0.5em;
+    //   width: 45%;
+    // }
+    // &:before {
+    //   right: 1.5%;
+    // }
+    // &:after {
+    //   left: 1.5%;
+    // }
+  }
+  .feedsContainer {
+    height: 80%;
+    display: flex;
+    //flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //background-color: red;
+    gap: 5em;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 70%;
+
+    .twitterCont {
+      height: 100%;
+      flex: 1.5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      //justify-content: center;
+      margin: 0;
+      padding: 0;
+      h4 {
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+        width: 100%;
+        color: $text-color-white;
+      }
+    }
+
+    .instagramContainer {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      //justify-content: center;
+      margin: 0;
+      padding: 0;
+      flex: 1.5;
+      //background-color: red;
+      //width: 100%;
+
+      h4 {
+        width: 100%;
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+        color: $text-color-white;
+      }
+      figure {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    .socialTitle {
+      font-size: 2.5rem;
+    }
+    .feedsContainer {
+      width: 90%;
+      flex-direction: column;
+      .twitterCont {
+        width: 90%;
+        h4 {
+          font-size: 2rem;
+          font-weight: 600;
+        }
+      }
+      .instagramContainer {
+        width: 90%;
+        h4 {
+          font-size: 2rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

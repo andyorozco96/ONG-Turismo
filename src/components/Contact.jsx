@@ -1,6 +1,7 @@
 import React from "react";
 import contactImg from "../assets/contact us.png";
 import style from "../scss/components/contact.module.scss";
+import ContactForm from "./ContactForm";
 
 function Contact() {
   return (
@@ -13,10 +14,8 @@ function Contact() {
           officia nam esse quibusdam earum sequi! Aperiam perferendis doloremque
           tempore iure earum repellat.
         </p>
-        <button>
-          Contactar
-          <a href="mailto:webmaster@example.com" target="_blank"></a>
-        </button>
+
+        <ContactForm />
         <div className={style.socialCont}>
           <h4>Nuestras redes sociales</h4>
           <a className={style.socialItem} href="" target="_blank">
@@ -70,26 +69,3 @@ function Contact() {
 }
 
 export default Contact;
-
-{
-  /* <div class="social">
-  <a href="#">
-    <div class="social-btn color-telegram">
-      <div class="icons8-telegram-app"></div>
-      <p class="order-1 google-font margin-telgram">Telegram</p>
-    </div>
-  </a>
-  <a href="#">
-    <div class="social-btn color-instagram">
-      <div class="icons8-instagram"></div>
-      <p class="order-1 google-font margin-instagram">instagram</p>
-    </div>
-  </a>
-  <a href="#">
-    <div class="social-btn color-whatsapp">
-      <div class="icons8-whatsapp"></div>
-      <p class="order-1 google-font margin-instagram">whats app</p>
-    </div>
-  </a>
-</div> */
-}

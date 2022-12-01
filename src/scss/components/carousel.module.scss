@@ -19,7 +19,7 @@
 
     h2 {
       font-family: $font-titles;
-      font-size: 1.75em;
+      font-size: 4em;
       margin-bottom: 0.5em;
       color: $primary-color;
     }
@@ -27,7 +27,7 @@
     p {
       width: 80%;
       //background-color: red;
-      font-size: 0.9em;
+      font-size: 1.2em;
       text-align: justify;
     }
   }
@@ -72,6 +72,29 @@
     .swiper-pagination-bullet-active {
       background-color: rgb(255, 162, 0);
       opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    overflow: hidden;
+    margin-top: 0.5em;
+
+    .textContainer {
+      width: 90%;
+      margin-bottom: 3em;
+
+      h2 {
+        font-size: 2.2em;
+        margin-bottom: 0.75em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+    .swiperContainer {
+      width: 90%;
+      height: 35vh;
     }
   }
 }

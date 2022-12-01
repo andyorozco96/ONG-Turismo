@@ -1,5 +1,6 @@
 @import "../abstracts/reset.scss";
 @import "../abstracts/variables.scss";
+@import "../abstracts/mixins.scss";
 
 .main {
   display: flex;
@@ -16,12 +17,10 @@
     height: fit-content;
     //background-color: red;
     margin: auto;
-    margin-top: 8%;
-    margin-left: 7%;
 
     h3 {
       font-family: $font-titles;
-      font-size: 2em;
+      font-size: 5em;
       text-align: left;
       margin-bottom: 1rem;
       color: $primary-color;
@@ -29,37 +28,45 @@
 
     p {
       text-align: left;
-      font-size: 0.9em;
+      font-size: 1.2em;
       color: $text-color-grey;
     }
 
     button {
-      //align-self: center;
-      margin: 1rem 0;
+      @include btn-primary;
       width: fit-content;
-      padding: 0.3rem 0.5rem;
+      font-size: 1.2em;
+      margin: 1.5em 0;
     }
 
     .socialCont {
       display: flex;
-      flex-direction: column;
-      //background-color: darkgray;
+      //justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
       margin-top: 1rem;
       overflow: hidden;
-      gap: 0.2rem;
+      gap: 0.5em;
 
       h4 {
+        font-family: $font-titles;
         text-align: left;
+        color: $primary-color;
+        margin-bottom: 0.5em;
+        display: column;
+        width: 100%;
+        font-size: 2.5em;
       }
 
       .socialItem {
-        //background-color: red;
-        //width: fit-content;
+        display: flex;
+        justify-content: center;
         text-align: left;
         padding-left: 1em;
-        width: 200px;
-        transition: all 0.8s;
-        transform: translateX(-80%);
+        width: fit-content;
+        //transition: all 0.8s;
+        //transform: translateX(-80%);
         color: $text-color-white;
         text-decoration: none;
         padding: 0;
@@ -92,17 +99,18 @@
         }
 
         div {
-          padding: 0rem 0.5rem;
+          padding: 0.2rem 0.7rem;
           background-color: rgb(221, 43, 123);
-          border-top-right-radius: 10px;
-          border-bottom-right-radius: 10px;
+          border-radius: 50%;
           display: flex;
           justify-content: right;
           align-items: center;
-          gap: 1rem;
 
+          span {
+            display: none;
+          }
           i {
-            font-size: 1.3em;
+            font-size: 2em;
           }
         }
 
@@ -139,6 +147,78 @@
       height: 100%;
       width: auto;
       //background-color: red;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 2em;
+    height: 150vh;
+    align-items: center;
+
+    .left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      margin: 0;
+
+      h3 {
+        font-size: 3em;
+      }
+
+      p {
+        width: 80%;
+        font-size: 0.9em;
+        text-align: center;
+      }
+      .socialCont {
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        h4 {
+          font-family: $font-titles;
+          text-align: center;
+          font-size: 1.5em;
+          color: $primary-color;
+          margin-bottom: 0.5em;
+          display: column;
+          width: 100%;
+        }
+
+        .socialItem {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transform: none;
+          width: fit-content;
+
+          div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            span {
+              display: none;
+            }
+            i {
+              font-size: 2em;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      flex: 1.5;
+      margin-top: 3em;
+      width: 100%;
+      border: none;
+      margin-bottom: 0;
     }
   }
 }
