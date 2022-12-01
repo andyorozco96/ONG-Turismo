@@ -19,21 +19,21 @@ function Objectives() {
     });
   }
 
-  useEffect(() => {
-    if (
-      !objective.objective1 &&
-      !objective.objective2 &&
-      !objective.objective3 &&
-      !objective.objective4
-    ) {
-      setObjective({
-        objective1: true,
-        objective2: false,
-        objective3: false,
-        objective4: false,
-      });
-    }
-  }, [objective]);
+  // useEffect(() => {
+  //   if (
+  //     !objective.objective1 &&
+  //     !objective.objective2 &&
+  //     !objective.objective3 &&
+  //     !objective.objective4
+  //   ) {
+  //     setObjective({
+  //       objective1: true,
+  //       objective2: false,
+  //       objective3: false,
+  //       objective4: false,
+  //     });
+  //   }
+  // }, [objective]);
 
   return (
     <div id="objectives" className={style.main}>
