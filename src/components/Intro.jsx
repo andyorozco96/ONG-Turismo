@@ -30,7 +30,7 @@ function Intro() {
           <img src={logo} alt="" />
         </div>
         <h1>
-          Welcome to <b className={style.primaryText}>nombre ONG</b>
+          Bienvenido a <b className={style.primaryText}>Insertar Nombre</b>
         </h1>
         <div className={style.headerInfo}>
           <p>
