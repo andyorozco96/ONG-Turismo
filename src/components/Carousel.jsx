@@ -14,11 +14,12 @@ function Carousel() {
   return (
     <div id="carousel" className={style.container}>
       <div className={style.textContainer}>
-        <h2>¡Descrube nuevos destinos en Argentina!</h2>
+        <h2>Descubre nuevos destinos turísticos en Argentina</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          aperiam corporis voluptatem harum, id cupiditate sunt mollitia hic
-          similique ut natus in minus illum fugit libero ipsum velit vel rerum!
+          Este es un texto de ejemplo. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Veniam aperiam corporis voluptatem harum, id
+          cupiditate sunt mollitia hic similique ut natus in minus illum fugit
+          libero ipsum velit vel rerum!
         </p>
       </div>
       <div className={style.swiperContainer}>

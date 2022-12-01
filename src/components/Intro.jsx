@@ -34,10 +34,11 @@ function Intro() {
         </h1>
         <div className={style.headerInfo}>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
-            nostrum repudiandae architecto blanditiis et quod possimus.
-            Reiciendis molestiae eius numquam? Magnam consequuntur recusandae
-            enim exercitationem quos, officia nobis nesciunt fugiat?
+            Este es un texto de ejemplo. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Fugit nostrum repudiandae architecto blanditiis et
+            quod possimus. Reiciendis molestiae eius numquam? Magnam
+            consequuntur recusandae enim exercitationem quos, officia nobis
+            nesciunt fugiat?
           </p>
         </div>
 

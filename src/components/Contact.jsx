@@ -9,10 +9,10 @@ function Contact() {
       <div className={style.left}>
         <h3>¡Contáctanos!</h3>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quae
-          nesciunt aspernatur quas ullam explicabo, asperiores voluptatem
-          officia nam esse quibusdam earum sequi! Aperiam perferendis doloremque
-          tempore iure earum repellat.
+          Este es un texto de ejemplo. Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. At quae nesciunt aspernatur quas ullam explicabo,
+          asperiores voluptatem officia nam esse quibusdam earum sequi! Aperiam
+          perferendis doloremque tempore iure earum repellat.
         </p>
 
         <ContactForm />
